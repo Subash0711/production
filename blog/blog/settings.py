@@ -30,7 +30,7 @@ DEBUG = False
 # if DEBUG:
 #     ALLOWED_HOSTS = []
 # else:
-ALLOWED_HOSTS = ['157.245.99.60']
+ALLOWED_HOSTS = ['147.182.245.166']
 
 
 # Application definition
