@@ -25,12 +25,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'zm++^dc27drtuwhisqrb-n-l$o2i_2vqcj#e#skr$g#v6)!5*n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-if DEBUG:
-    ALLOWED_HOSTS = []
-else:
-    ALLOWED_HOSTS = ['159.89.166.14']
+# if DEBUG:
+#     ALLOWED_HOSTS = []
+# else:
+ALLOWED_HOSTS = ['157.245.99.60']
 
 
 # Application definition
@@ -81,19 +81,19 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if DEBUG:
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bolgNest', 
-        'USER': 'postgres',
-        'PASSWORD': 2023,
-        'HOST': 'localhost', 
-        'PORT': '5433',
-    }
-}
-else:
-    DATABASES = {
+# if DEBUG:
+#     DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'bolgNest', 
+#         'USER': 'postgres',
+#         'PASSWORD': 2023,
+#         'HOST': 'localhost', 
+#         'PORT': '5433',
+#     }
+# }
+# else:
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'defaultdb', 
